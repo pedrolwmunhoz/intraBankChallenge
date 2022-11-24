@@ -15,11 +15,11 @@ O [layout](https://www.figma.com/file/bVq19HGbDCOCScIwLIBnbp/Teste-t%C3%A9cnico?
 Temos duas rotas de uma API de usuário para que você possa desenvolver a aplicação: 
 
 ```sh
-"https://629f52338b939d3dc29519e3.mockapi.io/api/challenge"
+"https://637f50932f8f56e28e87af4a.mockapi.io/challenge"
 ```
 #### Criar usuário
 ```
-POST /user
+POST /challenge
 {
     "firstName": String,
     "lastName": String,
@@ -33,7 +33,7 @@ POST /user
 ```
 #### Obter dados do usuário
 ```
-GET /user/:id
+GET /challenge/:id
 ```
 ## O que será avaliado ?
 
