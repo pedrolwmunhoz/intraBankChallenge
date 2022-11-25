@@ -1,5 +1,8 @@
 import { globalCss } from '@stitches/react'
 
 export const globalStyles = globalCss({
-  '*': { margin: 0, padding: 0, boxSizing: 'border-box', fontFamily: 'Poppins' }
+  '*': { margin: 0, padding: 0, boxSizing: 'border-box', fontFamily: 'Poppins', border: 'none' },
+  'body':{
+    backgroundColor: '#121212'
+  }
 })
