@@ -262,13 +262,12 @@ const Form = () => {
                 receiveNotifications: document.getElementById('moreInfo').checked,
             }
             Axios.post("https://637f50932f8f56e28e87af4a.mockapi.io/challenge", post)
-                .catch((err)=>{
-                    if(err.response.status === 400){
-                        console.log(err)
-                        alert("Cadastro falhou")
-                    }else{
+                .then((resp)=>{
+                    if(resp.status === 201){
                         setCardInfo(post)
                         setHomePageValue(false)
+                    }else{
+                        alert("Cadastro falhou")
                     }
                 })
         }
@@ -356,6 +355,7 @@ const Form = () => {
             document.getElementById('containerBio').style.border ="none"
 
         }
+
         return aux
     }
 
