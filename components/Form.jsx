@@ -262,8 +262,8 @@ const Form = () => {
                 receiveNotifications: document.getElementById('moreInfo').checked,
             }
             Axios.post("https://637f50932f8f56e28e87af4a.mockapi.io/challenge",  post)
-                console.log(resp)
                 .then((resp)=>{
+                    console.log(resp)
                     if(resp.status === 201){
 
                         setCardInfo(post)
