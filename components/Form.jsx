@@ -265,7 +265,6 @@ const Form = () => {
                 .then((resp)=>{
                     console.log(resp)
                     if(resp.status === 201){
-
                         setCardInfo(post)
                         setHomePageValue(false)
                     }else{
