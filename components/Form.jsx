@@ -261,7 +261,7 @@ const Form = () => {
                 bio: document.getElementById('input-bio').value,
                 receiveNotifications: document.getElementById('moreInfo').checked,
             }
-            Axios.post("https://637f50932f8f56e28e87af4a.mockapi.io/challenge", post)
+            Axios.post("https://637f50932f8f56e28e87af4a.mockapi.io/challenge",  post)
                 .then((resp)=>{
                     if(resp.status === 201){
                         setCardInfo(post)
